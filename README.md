@@ -1,6 +1,6 @@
 # _resola-qa-challenge_
 
-## Execute the test cases
+## How to execute the test cases
 In order to run the test case, we need **setup Postman:**
   - Please download the application [here] 
   - Install it, also create an account
