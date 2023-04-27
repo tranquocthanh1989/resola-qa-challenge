@@ -12,16 +12,22 @@
 
 
 ## Assumption
-- The API is called automatically when User perfomed some specific actions like: add item into Cart, submit Cart
+- The API is called automatically when User perfomed some specific actions on the Front-end: add item into Cart, submit Cart
+- All the values are defined as 'String' but not specific the lenght, so assumpt that max lenght is 60. Because most of them are ID which is usually around 24-32 chars
+- All the values are already saved into Database
 
 ## Test data
+- Should have a query into Database to get the actual data (format, pattern)
 
 ## Test cases
+- Refer to this file here
 
 ## Estimation:
-
+- 1 MD for execution all test cases also define automation test in Postman.
+- 
 ## Risk management:
 - The Tester who reviewed this test cases are considered as the back-up resource
 - If the endpoint is down, we will only test the happy cases
+- Need to test with GUI later to see the API is triggered properly
 
 [here]: https://resola.stoplight.io/docs/resola/e2bebaae60b45-track-event
