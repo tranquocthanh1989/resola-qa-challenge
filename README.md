@@ -15,7 +15,7 @@ In order to run the test case, we need **setup Postman:**
 > ![image](https://user-images.githubusercontent.com/131781585/234877096-160e9baa-770e-4518-bf05-bc7eeb94a51b.png)
 
 
-- Download the test case [TrackEvent_API_200_1]
+- Download the Postman collection [postman-collection]
 
 ## Personal evaluation
 
@@ -23,4 +23,4 @@ For the Track Event API:
 - I think we should set the `userId` as a required field since the whole API relating to actions from User. It is better to know who did it.
 
 [here]: https://www.postman.com/downloads/
-[TrackEvent_API_200_1]: 
+[postman-collection]: 
