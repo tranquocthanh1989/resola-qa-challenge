@@ -1,5 +1,6 @@
 # Bug no.#001
 ### Description: deviceType attributes allows non-defined value
+**Severity:** Medium
 
 **Pre-condition:**
 - Postman collection is imported, and test case `TrackEvent` should be available
