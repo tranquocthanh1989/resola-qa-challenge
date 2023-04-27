@@ -20,7 +20,8 @@
 - Should have a query into Database to get the actual data (format, pattern)
 
 ## Test cases
-- Refer to this file here
+- Refer to this [file here]
+
 
 ## Estimation:
 - 1 MD for execution all test cases also define automation test in Postman.
@@ -31,3 +32,4 @@
 - Need to test with GUI later to see the API is triggered properly
 
 [here]: https://resola.stoplight.io/docs/resola/e2bebaae60b45-track-event
+[file here]: 
