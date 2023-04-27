@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "37f3613b-d530-4e31-ae02-c428a39ec006",
+		"name": "resola-qa-challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21144204"
+	},
+	"item": [
+		{
+			"name": "Track Event",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200 or 204\", function () {",
+							"    pm.response.to.be.oneOf([200, 204]);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"organizationId\": \"TEST organizationId\",\r\n  \"projectId\": \"TEST projectId\",\r\n  \"anonymousId\": \"TEST anonymousId\",\r\n  \"userId\": \"TEST userId\",\r\n  \"requestId\": \"TEST requestId\",\r\n  \"category\": \"striTEST categoryng\",\r\n  \"event\": \"TEST event\",\r\n  \"context\": {\r\n    \"userAgent\": \"TEST userAgent\",\r\n    \"deviceType\": \"mobile\"\r\n  },\r\n  \"properties\": {\"id\":null,\"name\":\"Synalio\"},\r\n  \"sentAt\": \"TEST sentAt\"\r\n}"
+				},
+				"url": {
+					"raw": "{{resolaEndpoint}}",
+					"host": [
+						"{{resolaEndpoint}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Track Event - bad request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"organizationId\": null,\r\n  \"projectId\": \"TEST projectId\",\r\n  \"anonymousId\": \"TEST anonymousId\",\r\n  \"userId\": \"TEST userId\",\r\n  \"requestId\": \"TEST requestId\",\r\n  \"category\": \"striTEST categoryng\",\r\n  \"event\": \"TEST event\",\r\n  \"context\": {\r\n    \"userAgent\": \"TEST userAgent\",\r\n    \"deviceType\": \"mobile\"\r\n  },\r\n  \"properties\": {\"id\":null,\"name\":\"Synalio\"},\r\n  \"sentAt\": \"TEST sentAt\"\r\n}"
+				},
+				"url": {
+					"raw": "{{resolaEndpoint}}",
+					"host": [
+						"{{resolaEndpoint}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
