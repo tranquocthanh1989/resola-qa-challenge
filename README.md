@@ -20,4 +20,4 @@ For the Track Event API:
 - I think we should set the `userId` as a required field since the whole API relating to actions from User. It is better to know who did it.
 
 [here]: https://www.postman.com/downloads/
-[postman-collection]: 
+[postman-collection]: https://github.com/tranquocthanh1989/resola-qa-challenge/blob/main/resola-qa-challenge.postman_collection.json
