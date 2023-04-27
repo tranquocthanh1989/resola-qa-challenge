@@ -1,21 +1,19 @@
 # Bug no.#001
-### Description: Optional attributes do not accept NULL value
+### Description: deviceType attributes allows non-defined value
 
 **Pre-condition:**
-- Postman collection is imported, and test case `TrackEvent_API_200_1` should be available
+- Postman collection is imported, and test case `TrackEvent` should be available
 
 **Step to reproduce:**
-- Open the test case `TrackEvent_API_200_1`
-- For the key `anonymousId`, update value to NULL to make it look like this
->   "anonymousId": null
+- Open the test case `TrackEvent`
+- For the key `deviceType`, update value to something else other than `pc` or `mobile`
+>   For example:
+>   "deviceType": "test"
 - Run the test
 
 **Expectation:**
-The return status should be `200`
+The return status should be `400`
 
 **Actual result:**
-The return status is `400`
-> ![image](https://user-images.githubusercontent.com/131781585/234882107-7fc73e48-aecd-49d3-8956-8ce6dafebe5f.png)
+The return status is `200`
 
-**Note**:
-- The same issue with key `userId`
