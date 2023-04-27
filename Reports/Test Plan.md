@@ -25,11 +25,11 @@
 
 ## Estimation:
 - 1 MD for execution all test cases also define automation test in Postman.
-- 
+
 ## Risk management:
 - The Tester who reviewed this test cases are considered as the back-up resource
 - If the endpoint is down, we will only test the happy cases
 - Need to test with GUI later to see the API is triggered properly
 
 [here]: https://resola.stoplight.io/docs/resola/e2bebaae60b45-track-event
-[file here]: 
+[file here]: https://github.com/tranquocthanh1989/resola-qa-challenge/blob/main/Reports/TrackEvent_test%20cases.xlsx
